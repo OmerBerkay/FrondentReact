@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+/* ProductList.css */
+
+/* Ana konteyner için stil */
+.beko {
+  display: flex;
+  flex-wrap: wrap; /* Satıra sığmayan kartlar bir sonraki satıra geçer */
+  gap: 20px; /* Kartlar arasındaki boşluk */
+  padding: 20px; /* Konteynerin iç kenar boşluğu */
+}
+
+/* Kartlar için stil */
+.card {
+  flex: 1 1 calc(33.333% - 20px); /* Üçlü hizalama, boşlukları da dikkate alarak genişlik */
+  box-sizing: border-box; /* Padding ve border'ları da genişliğe dahil et */
+  min-width: 350px; /* Kartın minimum genişliği */
+  max-width: 350px;
+  background:#fff; /* Kart arka plan rengi */
+  border: 1px solid #ddd; /* İnce gri kenarlık ekler */
+  border-radius: 8px; /* Kart köşe yuvarlama */
+  overflow: hidden; /* Taşan içeriği gizle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge ekler */
+  transition: transform 0.3s, box-shadow 0.3s; /* Hover efekti için geçiş */
+}
+
+/* Kart hover efekti */
+.card:hover {
+  transform: translateY(-10px); /* Hover'da kartı yukarı kaydırır */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover'da gölgeyi artırır */
+}
+
+/* Kart içeriği için stil */
+.card .content {
+  padding: 15px; /* İçeriğin etrafında boşluk bırak */
+}
+
+/* Kart başlık ve meta için stil */
+.card .header {
+  font-size: 1.2em; /* Başlık boyutu */
+  font-weight: bold; /* Başlık kalın */
+  margin-bottom: 5px; /* Başlık ile altındaki içerik arasında boşluk */
+}
+
+.card .meta {
+  color: #888; /* Meta metni rengi */
+  margin-bottom: 10px; /* Meta ile açıklama arasında boşluk */
+}
+
+/* Kart açıklaması için stil */
+.card .description {
+  margin-top: 10px; /* Açıklamanın üst kısmına boşluk ekleyin */
+  overflow: hidden; /* Taşmayı engelle */
+  text-overflow: ellipsis; /* Taşan metin için ellipsis göster */
+  white-space: normal; /* Metnin satır satır görünmesini sağlar */
+}
+
+/* Kartın ekstra içeriği için stil */
+.card .extra {
+  padding: 5px; /* Ekstra içeriğin etrafında boşluk bırak */
+  border-top: 1px solid #ddd; /* Üst kenarlık */
+}
+
+/* Butonlar için stil */
+.ui.two.buttons {
+  display: flex;
+  justify-content: space-between; /* Butonlar arasında eşit boşluk bırakır */
+}
+/* App.css ya da uygun bir CSS dosyasına ekleyin */
+.book-grid {
+  margin-top: 20px; /* Grid'in üst kısmında boşluk bırakır */
+}
+
+.book-card {
+  margin: 10px; /* Kartlar arasında boşluk bırakır */
+  padding: 10px; /* Kartın iç kısmına boşluk bırakır */
+}
+
+/* Kartların alt kısmını daha fazla aşağıda göstermek için */
+.book-card .ui.two.buttons {
+  margin-top: 10px; /* Butonlar arasında boşluk bırakır */
+}
+.button-spacing {
+  margin-top: 20px; /* Butonun üst kısmında boşluk bırakır */
+}
